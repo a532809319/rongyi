@@ -1,0 +1,91 @@
+<ion-view hide-nav-bar="true">
+
+    <!--<div class="bar bar-header bar-light" style="height:135px;">-->
+    <div class="bar bar-header bar-light" style="height:82px;">
+        <h1 class="title header-bar-color" style="font-size: 18px;">借款搜索</h1>
+        <!--标题栏-->
+        <button class="button button-clear button-stable icon-left  pull-right text-center mainsearch-btn-sort" ng-click="vm.openAndClosePopover($event,'./modulehome/search/sort.html','open')">
+                <!---->
+                <img src="./../img/search/dkss_mrpx.png" style="height:14px;vertical-align: middle;" >
+                <span  class=" font-size-12" >{{vm.searchTitle.sortName}}</span>
+            </button>
+
+        <!--金额搜索栏-->
+        <div class="multicolbox" style="position: absolute;top:45px;left:0px;width:100%;border-top: solid 1px #EEEEEE;">
+            <div class="colitemstrech">
+                <button class="button " style="width:100%;" ng-click="vm.openAndClosePopover($event,'./modulehome/search/money.html','open')">
+                    <span class="font-size-16 color-333333">{{vm.searchTitle.moneyName}}</span>
+                    <i class="icon ion-ios-arrow-down" ></i>
+                </button>
+            </div>
+
+            <div class="colitemstrech">
+                <button class="button " style="width:100%;" ng-click="vm.openAndClosePopover($event,'./modulehome/search/type.html','open')">
+                    <span class="font-size-16 color-333333">{{vm.searchTitle.typeName}}</span>
+                    <i class="icon ion-ios-arrow-down" ></i>
+                </button>
+            </div>
+        </div>
+
+        <!--类型搜索栏-->
+        <!--<div class="mainsearch-query-div-background" style="position: absolute;top:85px;width:100%;">
+			<div class="list mainsearch-query-div">
+				<div class="item item-input padding-left padding-right mainsearch-query-div-background mainsearch-noborder">
+					<input type="text" placeholder="  输入搜索内容">
+					<button class="button button-calm light mainsearch-btn">产品搜索</button>
+				</div>
+			</div>
+		</div>-->
+    </div>
+
+    <!--<div class="scroll-content-y" style="top:154px; background:#e7e7e7;">  带有搜索框的样式-->
+    <div class="scroll-content-y" style="top:83px; background:#e7e7e7;">
+        <!--产品列表栏-->
+        <ion-list class="list">
+            <ion-item class="item item-icon-right products-list-img-left" ng-click="vm.forwardProductDetail(item)" ng-repeat="item in vm.items ">
+                <div class="multicolbox">
+                    <div class="colitemwrap">
+                        <div>
+                            <img src="{{item.logoUrl}}" style="max-width:50px;max-height:50px;" />
+                        </div>
+                    </div>
+                    <div class="colitemstrech products-list-text-left">
+
+                        <p>
+                            <span class="font-size-14 color-333333">{{item.prodName}}</span>
+                            <span class="mainsearch-product-tag font-size-10" ng-repeat="producttag in item.prodTagBriefs">{{producttag.prodTypeName}}</span>
+                        </p>
+                        <div class="row row-no-padding">
+                            <div class="col-50">
+                                <p class="colitemstrech font-size-16 product-item-loanlimit">{{item.minLoanLimit}}~{{item.maxLoanLimit}}元</p>
+                                <p><small class="colitemstrech font-size-12" ng-if="(item.prodCatg === '1')">参考月费率{{item.monthRate|NumberDotFilter:2}}</small>
+                                    <small class="colitemstrech font-size-12" ng-if="!(item.prodCatg === '1')">参考日费率{{item.dayRate|NumberDotFilter:2}}</small>
+                                </p>
+                            </div>
+                            <div class="col-50" style="margin-left: 1.1%;">
+                                <!--<div style="display:inline-block;position:absolute;right:14px;">-->
+                                <p><small class="colitemstrech font-size-12">最快放款时间<span class="product-item-loanputtime" >{{item.putMoneyTime}}</span>{{item.putMoneyTimeUnit}}</small></p>
+                                <p><small class="colitemstrech font-size-12">借款期限{{item.minLoanPeriod}}~{{item.maxLoanPeriod}}{{item.periodUnit}}</small>
+                                </p>
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="font-size-12"><b>{{item.prodDesc}}</b></div>
+            </ion-item>
+
+        </ion-list>
+        <div class="scroll-bottom-space"></div>
+    </div>
+
+    <!--底部tab栏-->
+    <!--	<ion-footer-bar>
+		<div class="tabs tabs-icon-top" style="left:0;">
+			<a class="tab-item"><i class="icon ion-home"></i>首页</a>
+			<a class="tab-item"><i class="icon ion-social-yen"></i>借钱</a>
+			<a class="tab-item"><i class="icon ion-android-person"></i>我的</a>
+		</div>
+	</ion-footer-bar> -->
+</ion-view>

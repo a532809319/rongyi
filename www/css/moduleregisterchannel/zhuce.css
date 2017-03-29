@@ -1,0 +1,141 @@
+input::-webkit-input-placeholder {//webkit内核
+　　color: #999;
+    font-size: 1.4222rem;
+    text-indent:1.7778rem;
+}
+.fl{
+    float: left;
+}
+a{text-decoration: none}
+
+.clearfix:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+
+
+}
+
+#FirstPage{
+
+    background-color: #1685d3;
+}
+.zhuce-banner{
+    width: 100%;
+    height: 17.7778rem;
+}
+.zhuce-banner img{
+    width: 100%;
+    height: 100%;
+}
+.zhuce-border-radius{
+    background: white;
+    width: 25.7778rem;
+    display: block;
+    border-radius:1.7780rem ;
+    height: 3.5556rem;
+
+}
+.zhuce-border-radius {
+
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-align-content: space-between;
+}
+.box-center{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-align-content: space-between;
+}
+.peson-message-box{
+    margin-top: 1.7778rem;
+    width: 100%;
+    height:13.5124rem ;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-align-content: space-between;
+    flex-direction: column;
+
+}
+.left-icon{
+    width:2.1333rem;
+    height: 2.1333rem;
+
+
+}
+.zhuce-border-radius input{
+    text-indent: 1.7778rem;
+    font-size: 1.4222rem;
+}
+.duanxinyzm-box{
+    position: relative;
+}
+.duanxinyzm{
+    width: 8.0000rem;
+    height: 3.5556rem;
+    position: absolute;right: 0;
+    color:#ec3633 !important;
+    font-size:1.1556rem;
+}
+.tjiaoanniu{
+    text-align: center;
+    font-size: 1.6000rem;
+    color: #841a25;
+    background: #ffc809;
+    border:2px solid #841a25;
+    height: 4.0000rem;
+    padding: 6px 0 5px 16px;
+}
+.list{
+    margin-bottom: 0;
+}
+.commit-button{
+    margin-top: 2.8444rem;
+}
+.left-icon-select{
+
+}
+.tongyi{
+    text-align: left;
+    color: #2a110d;
+    line-height:3.5556rem ;
+    font-size: 1.2444rem;
+    margin-left: 1.0667rem;
+}
+.tongyi-box{
+    height:13rem ;
+}
+.bottom-phone{
+    width: 100%;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    position: relative;
+    bottom:1.0667rem;
+
+
+}
+.phone-text{
+    width: 25.7778rem;
+
+}
+.phone-text div{
+   font-size: 0.9111rem;
+    color: white;
+    text-indent: 1.0667rem;
+
+}

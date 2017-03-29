@@ -1,0 +1,11 @@
+<div class="multicolbox padding-left padding-top padding-bottom">
+	<div class="colitemwrap">
+		<div>
+			<img src="{{vm.getImageUrl()}}" class="productdetail-tagimg">
+		</div>
+	</div>
+	<div class="colitemstrech">
+		<p class="productdetail-tagtext font-size-14" style="margin-bottom:0;height:14px;line-height:14px;">{{vm.tagValue}}</p>
+		<p class="productdetail-tagtext font-size-12" style="margin-bottom:0;height:12px;line-height:12px;color:#a2a2a2;padding-top:6px;" ng-if="vm.getIsDesc()" >{{vm.tagDesc}}</p>
+	</div>
+</div>

@@ -1,0 +1,74 @@
+<ion-view view-title="hello">
+    <ion-nav-buttons side="left">
+        <button class="button" ng-click="doSomething()">
+            左侧的按钮！
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button" ng-click="doSomething()">
+          右侧的按钮！
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="helloapp">
+            <h4>RYbring App </h4>
+
+            <hr>
+
+            <div class="   card">
+                <div class="  list">
+                    <form ng-submit="vm.transform()" role="form">
+                        <div class="  item ">
+                            <input type="text" id="input" ng-model="vm.input" class="item-input" placeholder="Input some chars">
+                        </div>
+                        <div class="  item">
+                            <label><input type="radio" name="method" ng-model="vm.method" value="toLowerCase" checked> toLowerCase()</label>
+                        </div>
+                        <div class="  item">
+                            <label><input type="radio" name="method" ng-model="vm.method" value="toUpperCase"> toUpperCase()</label>
+                        </div>
+                        <button type="submit" class="  button button-full">Transform</button>
+                        <p class="help-block" ng-if="vm.result">Result: {{ vm.result }}.</p>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="card">
+                <div class="multicolbox">
+                    <div class="colitemwrap">
+                        <div>
+                            <img src="http://img3.imgtn.bdimg.com/it/u=2231392925,930576310&fm=21&gp=0.jpg" style="height:72px;width:72px;" />
+
+                        </div>
+                    </div>
+                    <div class="colitemwrap">
+                        <div>
+                            <p>first</p>
+                            <p>second</p>
+                            <p>third</p>
+                        </div>
+                    </div>
+                    <div class="colitemstrech">
+                        <div>
+                            <!--<p ng-controller="httpctrl as c" ng-click="c.doGetData()">first</p>-->
+                            <p>second</p>
+                            <p><a href="#/testpage">third</a></p>
+                            <p>我很丑可是我很温柔</p>
+                        </div>
+                    </div>
+                    <div class="colitemwrap">
+                        <div>
+                            <span>&gt;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                todolist
+            </p>
+        </div>
+        <div>
+            <product-search-component></product-search-component>
+        </div>
+    </ion-content>
+</ion-view>

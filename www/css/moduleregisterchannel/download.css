@@ -1,0 +1,14 @@
+.photo-phone{
+    height: 25.6889rem;
+    width: 14.3778rem;
+}
+
+.photo-phone img{
+    width: 100%;
+    height:100%;
+}
+#img-mar-top{
+    margin-top: 9.4000rem;
+    padding: 0 0;
+
+}

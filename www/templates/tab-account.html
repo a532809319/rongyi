@@ -1,0 +1,13 @@
+<ion-view view-title="Account">
+    <ion-content>
+        <ion-list>
+            <ion-toggle ng-model="settings.enableFriends">
+                Enable Friends
+            </ion-toggle>
+            <div class="card">
+                <button ng-controller="httpctrl as c" ng-click="c.doGetData()">http</button>
+                <p>{{c.data}}</p>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

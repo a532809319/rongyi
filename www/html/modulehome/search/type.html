@@ -1,0 +1,17 @@
+<!--筛选类型页面-->
+<ion-popover-view class="padding-bottom"
+                  style="width:97%;height:auto;margin-top:10px;background: #FFF;">
+	<button class="button button-outline button-calm inline text-center mainsearch-selecttag-default"
+            ng-click="vm.openAndClosePopover($event,'./modulehome/search/sort.html','','type')">
+		<span>类型不限</span>
+	</button>
+
+	<button class="button button-outline button-light inline text-center mainsearch-selecttag"
+	ng-repeat="prodtype in vm.prodTypes"
+    ng-click="vm.openAndClosePopover($event,'./modulehome/search/sort.html',prodtype,'type')"
+    >
+		<span>{{prodtype.prodTypeName}}</span>
+	</button>
+
+
+</ion-popover-view>

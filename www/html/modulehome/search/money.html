@@ -1,0 +1,24 @@
+<!--筛选金额页面-->
+<ion-popover-view  class="padding-bottom"
+                  style="width:97%;height:auto;margin-top:10px;background: #FFF;">
+	<button class="button button-outline button-calm inline text-center mainsearch-selecttag-default"
+            ng-click="vm.openAndClosePopover($event,'./modulehome/search/sort.html','','money')">
+		<span>金额不限</span>
+	</button>
+	<button class="button button-outline button-light inline text-center mainsearch-selecttag"
+            ng-click="vm.openAndClosePopover($event,'./modulehome/search/sort.html','500-1000','money')">
+		<span>500-1000</span>
+	</button>
+	<button class="button button-outline button-light inline text-center mainsearch-selecttag"
+            ng-click="vm.openAndClosePopover($event,'./modulehome/search/sort.html','1000-5000','money')">
+		<span>1000-5000</span>
+	</button>
+	<button class="button button-outline button-light inline text-center mainsearch-selecttag"
+            ng-click="vm.openAndClosePopover($event,'./modulehome/search/sort.html','5000-10000','money')">
+		<span>5000-10000</span>
+	</button>
+	<button class="button button-outline button-light inline text-center mainsearch-selecttag"
+            ng-click="vm.openAndClosePopover($event,'./modulehome/search/sort.html','10000-10000','money')">
+		<span>10000+</span>
+	</button>
+</ion-popover-view>

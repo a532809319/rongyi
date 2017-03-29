@@ -1,0 +1,39 @@
+<ion-view hide-nav-bar="true" cache-view="false">
+    <!--<ion-nav-title>-->
+    <!--登录-->
+    <!--</ion-nav-title>-->
+
+    <div class="bar bar-header bar-positive">
+        <h1 class="title"></h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="vm.forwardRegister()">注册</button>
+        </div>
+    </div>
+
+    <ioc-content class="scroll-content has-header stable-bg" padding="true"> 
+
+        <div class="list">
+            <label class="item item-input">
+                <img class="loginregist-mobile-passwd-img" src="./../img/loginregist/dl_shouji.png">
+                <input type="text" ng-model="vm.userName" placeholder="请输入11位手机号">
+            </label>
+            <div class="item item-input">
+                <img class="loginregist-mobile-passwd-img" src="./../img/loginregist/dl_mima.png">
+                <input type="{{vm.itemPwdText.type}}" ng-model="vm.userPwd" placeholder="请输入6~18字母和数字组合密码">
+                <div ng-click="vm.togglePwdStatus()">
+                    <img src="{{vm.itemPwdText.icon}}" style="width:32px;margin-right: 20px;" />
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="padding">
+            <button class="button button-positive button-block loginRegist-footer-button" ng-click="vm.doLogin()"> 登 录 </button>
+            <div class="text-right">
+                <button class="button button-clear" ng-click="vm.forwardPwdReset()"><span class="calm"><small>忘记密码</small></span></button>
+            </div>
+            
+        </div>
+ 
+    </ioc-content>
+</ion-view>

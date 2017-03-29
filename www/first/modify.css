@@ -1,0 +1,145 @@
+@charset "utf-8";
+.multicolbox,
+.colitemwrap,
+.colitemstrech {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+	
+}
+
+.multicolbox {
+    display: box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+ 
+}
+
+.multicolbox .colitemstrech {
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-flex: 1;
+	padding-left:20px;
+}
+
+.item-input-reload{
+	width:48%;
+	margin-left:1%;
+	vertical-align:top;
+}
+
+.item-select-reload{
+	width:100%;
+	height:35px;
+	border-radius:8px;
+}
+
+.item-input-reload-input{
+	border:1px solid #fff;
+	border-radius: 8px;
+	letter-spacing:2px;
+	width:80%;
+	padding-right:2px;
+	position:absolute;
+	left:5px;
+	top:0;
+}
+
+.item-select-reload p{
+	position:absolute;
+	right:5px;
+	top:6px;
+}
+
+
+.item-input-div-reload{
+	width:90%;
+	margin-left:5%;
+	border:1px solid #11c1f3;
+	padding:0;
+}
+
+.inline-div-border-reload{
+	width:30%;
+	border-right:1px solid #11c1f3;
+	margin:0 1% 1% 1%;
+}
+
+.inline-div-noborder-reload{
+	width:30%;
+	margin:0 1% 1% 1%;
+}
+ 
+/*注册页面同意注册协议的选择框按钮自定义样式*/
+input[type="checkbox"].register-check{
+	width: 18px;
+	height: 18px;
+	margin: 3px 5px 0 10px ;
+}
+
+/*注册页面同意注册协议的选择框按钮自定义样式*/
+input[type="checkbox"].register-check::after{
+	top: 23%;
+	left: 17%;
+}
+
+input[type="checkbox"]:checked{	
+	background: #387ef5;
+	border-radius: 28px;
+}
+
+.bar-footer-reload{
+	height:82px;
+	padding-top:0;
+}
+
+.has-footer-reload{
+	bottom:82px;
+}
+
+button.button.button-positive.button-block.button-footer-information-reload{
+	height:50px;
+	padding:0 10px 0 10px;
+	margin:0;
+}
+
+p.title.p-footer-information-reload{
+	height:21px;
+	top:55px;
+	font-size:14px;
+	line-height:21px;
+}
+
+label.item.item-select.label-select-information-reload{
+	padding-top:6px;
+	padding-bottom:5px;
+}
+
+.button-content-login-reload{
+	position:absolute;top:0;right:8px;
+}
+
+.button.button-light.button-verificacode-register-reload{
+	border:none;
+	position: absolute;
+	top:0;
+	right:5px;
+	background-color:#F7F7F7 ;
+}
+
+.img-content-login-reload{
+	max-width:30px;
+	max-height:30px;
+	vertical-align: middle;
+}

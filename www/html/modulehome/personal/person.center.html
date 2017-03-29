@@ -1,0 +1,69 @@
+<ion-view hide-nav-bar="true" id="personCenterPage">
+    <!--<ion-nav-title>
+		<b>个人中心</b>
+	</ion-nav-title>
+	<ion-nav-buttons side="right">
+		<button class="button button-clear button-calm" ng-click="vm.fowardSettings()">
+            <span>设置</span>
+        </button>
+	</ion-nav-buttons>-->
+    <div class="bar bar-header bar-positive " style="height: 185px;background: url(./../img/personCenter/grzx_bj.png);background-size: 85% 85%;">
+        <p class="title">个人中心</p>
+        <div class="buttons">
+            <button class="button button-clear personcenter-button" ng-click="vm.forwardSettings()"><small>设置</small></button>
+        </div>
+
+        <div class="text-center personcenter-headimg">
+            <div>
+                <img src="./../img/personCenter/tou.png">
+            </div>
+
+            <p class="text-center padding-top light" ng-if="vm.personDoc!=null"><span class="font-size-14 personcenter-account"> 注册账号 {{vm.personDoc.mobno}} </span></p>
+            <!--<p class="text-center light">资料完成度:<span class="calm">79%</span></p>-->
+        </div>
+
+    </div>
+
+    <ioc-content class="scroll-content" style="top:185px;background-color:#EAEEEF;">
+
+
+        <ul class="list light-bg personcenter-info-ul">
+            <li class="item font-size-16" ng-click="vm.forwardPersonalDoc()">
+
+                <img src="./../img/personCenter/grzx_grzl.png">
+                <span>个人资料</span>
+                <img src="./../img/personCenter/jian.png" class="list-jiantou-right">
+            </li>
+
+            <li class="item font-size-16" ng-click="vm.forwardPersonalLoan()">
+                <img src="./../img/personCenter/grzx_wddk.png">
+                <span>我的借款 </span>
+                <img src="./../img/personCenter/jian.png" class="list-jiantou-right">
+            </li>
+            <li class="item font-size-16" ng-click="vm.forwardCommonQuestion()">
+                <img src="./../img/personCenter/grzx_cjwt.png">
+                <span>常见问题</span>
+                <img src="./../img/personCenter/jian.png" class="list-jiantou-right">
+            </li>
+            <li class="item font-size-16" ng-click="vm.forwardLinkCEO()">
+                <img src="./../img/personCenter/grzx_wxgzh.png">
+                <span>联系我们</span>
+                <img src="./../img/personCenter/jian.png" class="list-jiantou-right">
+            </li>
+
+        </ul>
+    </ioc-content>
+    <!--	<ion-footer-bar>
+		<div class="tabs tabs-icon-top" style="left:0;">
+			<a class="tab-item" >
+				<i class="icon ion-home"></i> 首页
+			</a>
+			<a class="tab-item">
+				<i class="icon ion-social-yen"></i> 借钱
+			</a>
+			<a class="tab-item">
+				<i class="icon ion-android-person"></i> 我的
+			</a>
+		</div>
+	</ion-footer-bar>-->
+</ion-view>

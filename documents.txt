@@ -1,0 +1,27 @@
+这儿是一个ECAHybrid的基础工程,运行说明如下 
+
+git clone  http://192.168.2.30/dragon/ECAHybrid.git  
+
+1.进入到根目录ECAHybrid
+  cd ECAHybrid
+
+2.安装配置
+  npm install 
+  npm install -g webpack-dev-server 
+
+3.运行
+  npm start 
+  
+
+4.提交说明
+  1.developers 需要在每天下午 4:00之前提交修改,
+    下午4:00之后的修改由第二天提交
+  2.提交时请具体描述修改内容
+  3.提交时请保持当前模块工作正常
+  4.提交时请Reformated Code 
+  
+   
+
+
+   
+  

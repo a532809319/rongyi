@@ -1,0 +1,160 @@
+
+
+<div  class="home-ads-slide">
+<ion-slide-box
+    class="home-ads-slide"
+    auto-play="true" does-continue="true" slide-interva="1000" ng-if="vm.banners!=null&&vm.banners.length>0">
+    <ion-slide  class="home-ads-slide" ng-repeat="item in vm.banners">
+           <img class="home-ads-image" ng-click="vm.lunImgClick(item)"   ng-src="{{item.bannerPicUrl}}"/>
+    </ion-slide>
+</ion-slide-box>
+</div>
+<div  class="scroll-content-y home-product-paddingbottom">
+    <!-- 走马灯-->
+    <div class="zou-ma-deng">
+
+        <div class="laba">
+            <img  style="" src="./../../img/modulehomev3/home_icon_laba.png" alt="">
+        </div>
+        <div class="zmd-box clearfix">
+            <div class="data-box" id="data-box">
+                <div class="zmd-box-data fl" ng-repeat=" top10 in vm.marqueeItems">{{top10.txt}}</div>
+                <div class="zmd-box-data "></div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- 功能块-->
+    <div class="log-box ">
+        <div class="log-box-1 row">
+
+            <a class="col-25 col-center log-center" href="" ng-click="vm.Tab1()">
+                <img src="./../../img/modulehomev3/home_icon_jiekuan.png" alt="">
+                <div class="logo-title-fontsize">借款大全</div>
+            </a>
+            <a class="col-25 log-center" ng-click="vm.Tab2()">
+                <img class="block" src="./../../img/modulehomev3/home_icon_xiaoe.png" alt="">
+                <div class="logo-title-fontsize">小额极速贷</div>
+            </a>
+            <a class="col-25 log-center" ng-click="vm.Tab3()">
+                <img src="./../../img/modulehomev3/home_icon_dae.png" alt="">
+                <div class="logo-title-fontsize">大额贷款</div>
+            </a>
+            <a class="col-25 log-center" href="" ng-click="vm.Tab4()">
+                <img src="./../../img/modulehomev3/home_icon_gongjij.png" alt="">
+                <div class="logo-title-fontsize">公积金贷款</div>
+            </a>
+        </div>
+        <div class="log-box-2 row">
+
+            <a class="col-25 col-center log-center" href="" ng-click="vm.Tab5()">
+                <img src="./../../img/modulehomev3/home_icon_zmxyd.png" alt="">
+                <div class="logo-title-fontsize">芝麻信用贷</div>
+            </a>
+            <a class="col-25 log-center" href="" ng-click="vm.Tab6()">
+                <img src="./../../img/modulehomev3/home_icon_xykh.png" alt="">
+                <div class="logo-title-fontsize">信用卡代还</div>
+            </a>
+            <a class="col-25 log-center" href="" ng-click="vm.Tab7()">
+                <img src="./../../img/modulehomev3/home_icon_fqd.png" alt="">
+                <div class="logo-title-fontsize">分期购物</div>
+            </a>
+
+            <a class="col-25 log-center" href="" ng-click="vm.Tab8()">
+                <img src="./../../img/modulehomev3/home_icon_blxyk.png" alt="">
+                <div class="logo-title-fontsize">办理信用卡</div>
+            </a>
+
+        </div>
+    </div>
+    <!-- -->
+
+    <div class="row  row-no-padding home-product-smallamount">
+        <div class="col-33  " style="width:100%;height:6.666rem" ng-click="vm.clickTab1XE1()"  style="width:33.333%;">
+
+                <img style="width:100%;height:6.666rem ;display:block" src="./../../img/home/jinge_image_01.png" >
+
+
+        </div>
+        <div class="col-33  " style="width:100%;height:6.666rem;margin-left:8px;margin-right:8px" ng-click="vm.clickTab1XE2()"  style="width:33.333%;">
+
+            <img style="width:100%;height:6.666rem ;display:block" src="./../../img/home/jinge_image_02.png" >
+
+
+        </div>
+        <div class="col-33  " style="width:100%;height:6.666rem ;" ng-click="vm.clickTab1XE3()"  style="width:33.333%;">
+
+            <img style="width:100%;height:6.666rem ;display:block" src="./../../img/home/jinge_image_03.png" >
+
+
+        </div>
+
+    </div>
+    <div >
+    <div>
+        <div class="daikuan-shop-title log-center">
+            <img id="img-shop" src="./../../img/first/listicon/market_icon.png" alt=""><span class="shop-size">贷款超市</span>
+        </div >
+        <ion-list class="list" ng-if="vm.items!=null&&vm.items.length>0">
+            <ion-item class="daikuan-shop" style="padding: 0"
+
+
+            >
+
+
+                <div class="product-box clearfix">
+
+                    <div class="product-left  fl "
+
+                         ng-repeat="item in vm.items"
+                         ng-click="vm.forwardProductDetail(item)"
+                    >
+                        <div class="marg-top">
+                            <div  class="product-top clearfix">
+                                <img  class="fl log-url" src={{item.logoUrl}} alt="">
+
+                                <ul class="fl right-margin">
+                                    <li  id="prodName" class="prodName">{{item.prodName}}</li>
+                                    <li  id="huanhang" class="prodDesc">{{item.prodDesc}}</li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </ion-item>
+        </ion-list>
+        <div class="help-model">
+          <div class="more-prod-box log-center">
+              <button class="more-prod" ng-click="vm.moreprod()">更多贷款产品 ></button>
+          </div>
+            <div class="two-help-div">
+                <div class="left-div div-box log-center">
+                    <img src="./../../img/first/listicon/phone.png" alt="">
+                </div>
+                <div class="right-div div-box log-center">
+                    <img src="./../../img/first/listicon/wechat.png" alt="">
+
+                </div>
+
+            </div>
+            <div class="two-help-div" >
+                <div class="left-div div-box1 log-center" >
+                    <img src="./../../img/first/listicon/phone_image.png" alt="">
+                </div>
+                <div class="right-div div-box1 log-center">
+                    <img src="./../../img/first/listicon/wechat_image.png" alt="">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+        <div class="scroll-bottom-space"></div>
+</div>

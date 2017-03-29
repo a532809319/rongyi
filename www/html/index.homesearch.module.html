@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="format-detection" content="telephone=no" >
+
+    <link href="./../css/multicolbox.styles.css" rel="stylesheet">
+    <link href="./../lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="./../css/main.search.css" rel="stylesheet">
+    <link href="./../css/product.list.css" rel="stylesheet">
+    <link href="./../css/product.detail.css" rel="stylesheet">
+    <link href="./../css/loginregist.styles.css" rel="stylesheet">
+    <link href="./../css/star.component.style.css" rel="stylesheet">
+    <link href="./../css/style.css" rel="stylesheet">
+
+</head>
+
+<body ng-app="homeSearchApp">
+
+<ion-nav-bar clas="navbarbackground" align-title="center">
+    <!--<ion-nav-back-button class="button-icon">-->
+        <!--<i class="icon ion-arrow-left-c"></i>返回-->
+    <!--</ion-nav-back-button>-->
+</ion-nav-bar>
+
+<ion-nav-view>
+    <ion-view hide-nav-bar="true">
+        <!--Easycash Loading-->
+        <img src="./../img/loading.png" alt="Loading" class="loading-image">
+    </ion-view>
+</ion-nav-view>
+
+<script src="./../jslib/deslib/tripledes.js" type="text/javascript"></script>
+<script src="./../jslib/deslib/mode-ecb.js" type="text/javascript"></script>
+
+<script src="./../lib/ionic/js/ionic.bundle.js"></script>
+<script src="./../js/HomeSearchModule.bundle.js" type="text/javascript"></script>
+<script src="./../js/NetRequest.bundle.js" type="text/javascript"></script>
+</body>
+
+</html>

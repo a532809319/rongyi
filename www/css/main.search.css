@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+
+/*产品列表中，图片与div左边距调整自定义样式。多个页面可共用，暂时放在此css中*/
+
+.products-list-img-left {
+    margin: 0;
+    padding: 10px 5px 10px 5px;
+    border-color: #eeeff3;
+}
+
+/*产品列表中，文字样式*/
+
+.product-item-loanlimit{
+    color: #fe595f!important;
+}
+.product-item-loanputtime{
+    color: #fe595f!important;
+}
+
+/*产品列表中，产品说明与图片间距调整自定义样式。多个页面可共用，暂时放在此css中*/
+
+.products-list-text-left {
+    margin-left: 8px;
+}
+
+.products-list-text-left h2 {
+
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.products-list-text-left p{
+    margin-bottom:4px;
+}
+
+
+/*产品搜索页，金额不限与借款类型间的竖线*/
+.mainsearch-verticalline{
+    border: 0.5px solid #a2a2a2;
+    width: 0.5px;
+    height: 40px;
+}
+
+/*产品搜索页面中间模糊查询 div 的宽度及居中,还款计划一栏的宽度及居中*/
+.mainsearch-query-div{
+    width: 94%;
+    margin: 0 auto;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+/*产品搜索页面中间模糊查询的背景*/
+.mainsearch-query-div-background{
+    background: #F7F7F7;
+}
+.mainsearch-query-div-background button{
+    border-radius: 0;
+    min-height: 34px;
+    line-height: 16px;
+}
+.mainsearch-query-div-background input{
+    background: #fff;
+    height: 36px;
+    padding-left: 10px;
+}
+
+/*产品搜索页面，无边框样式*/
+.mainsearch-noborder{
+    border: none;
+}
+
+/*产品搜索页面，产品列表tag标签*/
+.mainsearch-product-tag{
+    border: 1px #1983d1  solid;
+    font-size:12px;
+    border-radius: 6px;
+    color: #1983d1;
+    margin-left: 6px;
+    padding: 1px 2px;
+}
+
+/*产品搜索页面，金额不限与所有类型下拉页面中的tag标签*/
+.mainsearch-selecttag{
+    width: 30%;
+    border: 1px solid #999 !important;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 2.0%;
+    padding: 5px 0;
+    min-height: 20px;
+    line-height: 20px;
+    /*-webkit-transition: border linear #EEEEEE;*/
+    /*-moz-transition: border linear #EEEEEE;*/
+    /*-ms-transition: border linear #EEEEEE;*/
+    /*-o-transition: border linear #EEEEEE;*/
+    /*transition: border linear #EEEEEE;*/
+    /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 1px 1px rgba(0, 0, 0, 0.15);*/
+    color:#999 !important;
+
+}
+
+/*产品搜索页面，金额不限与所有类型下拉页面中的tag标签--默认项*/
+.mainsearch-selecttag-default{
+    width: 30%;
+    border: 1px solid #1983d1 !important;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 2.0%;
+    padding: 5px 0;
+    min-height: 20px;
+    line-height: 20px;
+    color: #1983d1!important;
+
+}
+
+.mainsearch-selecttag-default:active,
+.mainsearch-selecttag-default:visited{
+    border: 1px solid #e7e7e7 !important;
+    background:#999999    !important ;
+    color: white!important;
+
+}
+
+.mainsearch-btn{
+    background: #1983d1!important;
+    color: #FFF!important;
+    padding-left:20px!important;
+    padding-right: 20px!important;
+    font-size:14px!important;
+}
+
+.mainsearch-btn-sort{
+    background: #1983d1!important;
+    color: #FFF!important;
+    top:0px!important;
+    bottom:0px!important;
+}
+
+/*排序页的分隔线*/
+.mainsearch-sort-button{
+    color: #4d4d4d !important;
+    border-color: #eeeff3 !important;
+    margin: 0 !important;
+    border-top-width: 0px !important;
+}

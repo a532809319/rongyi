@@ -1,0 +1,49 @@
+<ion-view hide-nav-bar="true" id="productListPage">
+    <!--<ion-nav-title>-->
+    <!--小微极速贷-->
+    <!--</ion-nav-title>-->
+    <!--<ion-nav-title class="show">-->
+    <!--我是{{vm.getPageTitle()}}-->
+    <!--</ion-nav-title>-->
+    <div class="scroll-content-y">
+
+            <ion-list class="list">
+                <ion-item class="item item-icon-right products-list-img-left"
+                          ng-click="vm.forwardProductDetail(item)"
+                         ng-repeat="item in vm.items"
+                >
+				<div class="multicolbox" >
+					<div class="colitemwrap">
+						<div>
+							<img src="{{item.logoUrl}}" style="max-width:50px;max-height:50px;" />
+						</div>
+					</div>
+					<div class="colitemstrech products-list-text-left">
+
+						<p>
+							<span class="font-size-14 color-333333">{{item.prodName}}</span>
+							<span class="mainsearch-product-tag font-size-10" ng-repeat="producttag in item.prodTagBriefs">{{producttag.prodTypeName}}</span>
+						</p>
+
+                        <div class="row row-no-padding" >
+                            <div class="col-50">
+                                <p class="colitemstrech font-size-16 product-item-loanlimit" >{{item.minLoanLimit}}~{{item.maxLoanLimit}}元</p>
+                                <p><small class="colitemstrech font-size-12"   ng-if="(vm.body.basicInfo.prodCatg === '1')">参考月费率{{item.monthRate|NumberDotFilter:2}}</small>
+                                    <small class="colitemstrech font-size-12"  ng-if="!(vm.body.basicInfo.prodCatg === '1')">参考日费率{{item.dayRate|NumberDotFilter:2}}</small>
+                                </p>
+                            </div>
+                            <div class="col-50"style="margin-left: 1.1%;">
+                                <!--<div style="display:inline-block;position:absolute;right:14px;">-->
+                                    <p><small class="colitemstrech font-size-12" >最快放款时间<span class="product-item-loanputtime" >{{item.putMoneyTime}}</span>{{item.putMoneyTimeUnit}}</small></p>
+                                <p><small class="colitemstrech font-size-12" style="text-align: right;">借款期限{{item.minLoanPeriod}}~{{item.maxLoanPeriod}}{{item.periodUnit}}</small>
+                                    </p>
+                                <!--</div>-->
+                            </div>
+                        </div>
+
+					</div>
+				</div>
+			</ion-item>
+		</ion-list>
+	</div>
+</ion-view>

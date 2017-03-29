@@ -1,0 +1,42 @@
+<ion-view hide-nav-bar="false" cache-view="false">
+	<ion-nav-title>
+		修改密码
+	</ion-nav-title>
+	<ioc-content class="scroll-content has-header stable-bg">
+		<div class="list light-bg" style="margin-top:10px;">
+			<label class="item item-input">
+                <img class="loginregist-mobile-passwd-img" src="./../img/loginregist/dl_shouji.png">
+                <input type="text" ng-model="vm.userName" placeholder="请输入11位手机号">
+            </label>
+			<div class="item item-input">
+				<img class="loginregist-mobile-passwd-img" src="./../img/loginregist/dl_mima.png">
+				<input type="{{vm.itemPwdText.type}}" ng-model="vm.userPwd" placeholder="请输入6~18字母和数字组合密码">
+				<div ng-click="vm.togglePwdStatus()">
+					<img src="{{vm.itemPwdText.icon}}" style="width:32px;margin-right: 20px;" />
+				</div>
+			</div>
+
+			<div class="item item-input">
+				<span class="padding-right"><small class="color-333333">确认密码</small></span>
+				<input type="text" style="flex-basis:100px" ng-model="vm.verifyCode" placeholder="请确认密码">
+				<div ng-click="vm.togglePwdStatus()">
+					<img src="{{vm.itemPwdText.icon}}" style="width:32px;margin-right: 20px;" />
+				</div>
+			</div>
+
+			<div class="item item-input">
+				<span class="padding-right"><small class="color-333333">验证码</small></span>
+				<input type="text" style="flex-basis:100px" ng-model="vm.verifyCode" placeholder="  请输入验证码">
+				<button class="button button-clear button-calm" style="line-height:34px;height:34px; min-height:34px;margin-right:10px;"
+					ng-click="vm.doRequestVerifyCode()">
+                    <small>获取验证码</small>
+                </button>
+			</div>
+		</div>
+
+		</div>
+		<div class="padding">
+			<button class="button button-positive button-block loginRegist-footer-button" ng-click="vm.doPasswordFind()"> 重 置 密 码 </button>
+		</div>
+	</ioc-content>
+</ion-view>

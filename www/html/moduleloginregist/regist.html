@@ -1,0 +1,42 @@
+<ion-view  hide-nav-bar="true" cache-view="false">
+
+    <!--<ion-nav-title>注册</ion-nav-title>-->
+    <ioc-content class="scroll-content stable-bg">
+        <div class="list">
+            <label class="item item-input">
+                <img class="loginregist-mobile-passwd-img" src="./../img/loginregist/dl_shouji.png">
+                <input type="text" ng-model="vm.userName" placeholder="请输入11位手机号">
+            </label>
+            <div class="item item-input">
+                <img class="loginregist-mobile-passwd-img" src="./../img/loginregist/dl_mima.png">
+                <input type="{{vm.itemPwdText.type}}" ng-model="vm.userPwd" placeholder="请输入6~18字母和数字组合密码">
+                <div ng-click="vm.togglePwdStatus()">
+                    <img src="{{vm.itemPwdText.icon}}" style="width:32px;margin-right: 20px;" />
+                </div>
+            </div>
+
+            <div class="item item-input">
+                <span class="padding-right"><small class="color-333333">验证码</small></span> 
+                <input type="text" style="flex-basis:100px" ng-model="vm.verifyCode" placeholder="输入收到的验证码">
+                <button class="button button-clear button-calm" style="line-height:34px;height:34px; min-height:34px;margin-right:10px;" ng-click="vm.doRequestVerifyCode()">
+                    <small>获取验证码</small>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="padding">
+            <button class="button button-positive button-block loginRegist-footer-button" ng-click="vm.submitRegistInfo()"> 注 册 </button>
+            <p class="text-center" style="font-size:12px;">点击"注册"表示你同意《用户注册协议》和《容易借服务协议》</p>
+        </div>
+
+
+        <!--<div>
+            <label class="checkbox checkbox-positive" style="float:left;padding:0;margin-top:-3px;">
+                    <input class="register-check" type="checkbox"  ng-model="vm.checkAgreement"> 
+            </label>
+            <p> 我已阅读并同意<span class="calm"><<用户协议>></span></p>
+        </div>-->
+    </ioc-content>
+
+</ion-view>

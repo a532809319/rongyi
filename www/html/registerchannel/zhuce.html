@@ -1,0 +1,46 @@
+<ion-view hide-nav-bar="true" id="FirstPage">
+    <div class="zhuce-banner">
+        <img src="../../img/zhuce/h5_bg.png" alt="">
+    </div>
+    <div class="list peson-message-box" style="">
+        <div class="item item-input  zhuce-border-radius">
+            <img class="left-icon" src="../../img/zhuce/h5_shouji.png" alt="">
+            <input type="text" ng-model="vm.userName" placeholder="请输入手机号">
+        </div>
+        <div class="item item-input zhuce-border-radius duanxinyzm-box">
+            <img class="left-icon" src="./../../img/zhuce/h5_yanzheng.png" alt="">
+            <input type="text" ng-model="vm.verifyCode" placeholder="请输入验证码">
+            <div class="duanxinyzm button button-clear" id="ButtonVerify_Register" ng-click="vm.doRequestVerifyCode()"> 点击获取</div>
+        </div>
+        <div class="item item-input zhuce-border-radius">
+            <img class="left-icon" src="./../../img/zhuce/h5_mima.png" alt="">
+            <input type="password" ng-model="vm.userPwd" placeholder="请输入密码">
+        </div>
+
+    </div>
+    <div class=" commit-button  button-full commit box-center">
+        <div class="zhuce-border-radius box-center tjiaoanniu commit" ng-click="vm.commit()">立即申请</div>
+    </div>
+
+    <div class=" peson-message-box tongyi-box " style="">
+        <div class="item item-input   button-clear zhuce-border-radius" ng-click="vm.isAgree()">
+            <div class="box-center">
+                <img class="left-icon fl" src="{{vm.agreeIconurl}}" alt="">
+                <span class="tongyi">同意《容易借》借款协议</span>
+            </div>
+        </div>
+
+
+    </div>
+    <div class=" bottom-phone">
+
+        <div class="clearfix  phone-text">
+
+            <div class="fl">客服电话: 021-34907910</div>
+            <div class="fl">客服时间： 9：00-18：00</div>
+        </div>
+
+
+    </div>
+
+</ion-view>

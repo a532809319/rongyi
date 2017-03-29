@@ -1,0 +1,40 @@
+
+.rating-box {
+
+    position: relative;
+    display: inline-block;
+    width: 86px;
+    height: 17px;
+
+}
+
+.rating-back,
+.rating-front {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    display: inline;
+    height: 17px;
+    margin-top: 4px;
+}
+
+.rating-back span {
+    height: 17px;
+}
+
+.rating-back span:first-child {
+    background: #ff9009;
+    display: inline-block;
+}
+
+.rating-back span:last-child {
+    background: #e7e7e7;
+    display: inline-block;
+}
+
+.rating-back {
+    /*background: #11c1f3;*/
+    width: 50%;
+    height: 17px;
+}

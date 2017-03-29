@@ -1,0 +1,14 @@
+{
+    "name": "ionic-project",
+    "globalDevDependencies": {
+        "angular": "registry:dt/angular#1.5.0+20160829152510",
+        "angular-ui-router": "registry:dt/angular-ui-router#1.1.5+20160810191828",
+        "cryptojs": "registry:dt/cryptojs#3.1.2+20160317120654",
+        "ionic": "registry:dt/ionic#0.0.0+20160501155303",
+        "jquery": "registry:dt/jquery#1.10.0+20160704162008",
+        "source-map": "registry:dt/source-map#0.0.0+20160317120654",
+        "uglify-js": "registry:dt/uglify-js#2.6.1+20160316155526",
+        "webpack": "registry:dt/webpack#1.12.9+20160724112410",
+        "webpack-env": "registry:dt/webpack-env#1.12.2+20160316155526"
+    }
+}

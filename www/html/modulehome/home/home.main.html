@@ -1,0 +1,101 @@
+<ion-view hide-nav-bar="true">
+    <div class="bar bar-positive bar-header" style="height:100px;padding-bottom:0;">
+        <div style="margin:0 auto;">
+            <img src="../img/logo.png" style="max-height:45px;">
+        </div>
+        <div>
+            <i class="button icon icon-right ion-android-mail  productsdetail-header-backbutton"
+               ng-click=" "></i>
+        </div>
+        <div class="multicolbox productssearch-multicolbox" style="top:50px;">
+            <div class="colitemstretch productssearch-colitemstretch">
+                <div>
+                    <div class="item-input productssearch-searchbar-nopaddingleft">
+                        <label class="item-input-wrapper productssearch-searchbar-label">
+                            <input  style="color:white;" type="text"  ng-model="vm.loanAmount">
+                            <p style="right: 10px;top:14px;">元</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="colitemstrech productssearch-colitemstretch">
+                <div class="item-input productssearch-searchbar-nopaddingleft">
+                    <div class="item-select productssearch-searchbar-label productsearch-searchbar-arrowdown">
+                        <input class="mywhite" style="width:60%;color:white;padding: 0px;padding-left: 5px;"
+                               type="text"  ng-model="vm.loanDuration.loanPeriod">
+                        <select class="productssearch-searchbar-label-select" style="width:35%;padding: 0 26px 0 1px;"
+                                ng-model="vm.loanDuration.periodUnit">
+                                <option value="0">日</option>
+                                <option value="1" selected>月</option>
+                            </select>
+                    </div>
+                </div>
+            </div>
+            <div class="productsdetail-searchbar-buttondiv">
+                <button class="button button-assertive productssearch-searchbar-label-button"
+                 ng-click="vm.forwardProductSearch()"> 搜 索 </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar bar-subheader subheader-top" style="margin:0;padding:0;height:30px;top:100px;">
+        <h1 class="title" style="height:30px;line-height:30px;font-size:14px;">用户131*****850通过拍拍贷借款100元</h1>
+    </div>
+
+
+    <ion-content class="scroll-content has-header overflow-scroll scroll-content-top" style="background:#F7F7F7;top:125px;">
+        <div class="text-center light-bg" style="width:98%;margin:0 auto;">
+            <p class="padding" style="margin:0;">--------精选产品--------</p>
+            <div class="multicolbox">
+                <div class="colitemstretch" style="width:50%;">
+                    <div>
+                        <a href="#/productlist"><img src="../img/jsxj.png" style="max-width:90%;"></a>
+                    </div>
+                    <p>借的到的现金最高5000元，全线上申请</p>
+                </div>
+                <div class="colitemstretch" style="width:50%;margin-left: 10px;">
+                    <div>
+                       <a href="#/productloan"> <img src="../img/fqdk.png" style="max-width:90%;"></a>
+                    </div>
+                    <p>海量借款产品金额大，期限长，选择多</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="products-div">
+
+
+            <div class="products-list" ng-repeat="item in vm.items ">
+                <ion-item class="item item-icon-right products-list-img-left" ng-click="vm.forwardProductDetail(item)">
+                    <div class="multicolbox">
+                        <div class="colitemwrap">
+                            <div>
+                                <img src="{{item.logoUrl}}" style="max-width:60px;max-height:60px;" />
+                            </div>
+                        </div>
+                        <div class="colitemstrech products-list-text-left">
+                            <div>
+                                <div>
+                                    <h2>{{item.prodName}}</h2>
+                                    <p>参考月费率:<span class="calm">{{item.monthRate|NumberDotFilter:2}}</span></p>
+                                    <p >成功率：<star-component rate="{{item.successRate}}"></star-component>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="icon ion-ios-arrow-right"></i>
+                </ion-item>
+                <p class="item-divider products-list-introduce">{{item.prodDesc}}</p>
+            </div>
+
+
+        </div>
+
+
+        </div>
+    </ion-content>
+
+
+</ion-view>

@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+/*产品详情页面中盒子模型自定义样式*/
+
+.productsdetail-multicolboxs {
+    align-items: flex-start;
+    -moz-align-items: flex-start;
+    -webkit-align-items: flex-start;
+}
+
+
+/*产品详情页面中头部去掉下划线自定义样式*/
+
+.productsdetail-header-nobottomborder {
+    background-size: 100% 0;
+    border-bottom-width: 0;
+}
+
+
+/*产品详情页面，还款信息所在div自定义样式*/
+
+.productsdetail-repay-div {
+    width: 96%;
+    margin: 0 auto 10px auto;
+    position: relative;
+    font-size: 85%;
+}
+
+.productsdetail-repay-div>img {
+    width: 100%;
+    height: 100px;
+}
+
+.productsdetail-repay-div>p {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%
+}
+
+
+/*产品详情页面，还款信息里元素有右边框（例如：总还款额）的自定义样式*/
+
+.productsdetail-repay-div-child-border {
+    width: 30%;
+    border-right: 1px solid #11c1f3;
+    margin: 0 1% 1% 1%;
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+}
+
+.productsdetail-repay-div-child-border+.productsdetail-repay-div-child-border {
+    left: 35%;
+}
+
+.productsdetail-repay-div-child-border p {
+    margin-bottom: 0;
+}
+
+
+/*产品详情页面，还款信息里元素无右边框（例如：每期应还）的自定义样式*/
+
+.productsdetail-repay-div-child-noborder {
+    width: 30%;
+    margin: 0 1% 1% 1%;
+    position: absolute;
+    top: 50%;
+    left: 67.5%;
+}
+
+.productsdetail-repay-div-child-noborder p {
+    margin-bottom: 0;
+}
+
+
+/*产品详情页面，借款金额和还款期限输入框自定义样式*/
+
+.productsdetail-input {
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    margin-left: 10px;
+    background: #fff;
+    border: 1px solid #EEEEEE;
+    /*-webkit-transition: border linear #EEEEEE;
+    -moz-transition: border linear #EEEEEE;
+    -ms-transition: border linear #EEEEEE;
+    -o-transition: border linear #EEEEEE;
+    transition: border linear #EEEEEE;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 1px 1px rgba(0, 0, 0, 0.15);*/
+}
+
+
+/*产品详情页面，借款金额和还款期限输入框下方说明自定义样式*/
+
+.productsdetail-input p {
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    padding: 0 5px 0 5px;
+    font-weight: normal;
+}
+
+
+/*产品详情页，左内边距为零*/
+
+.productdetail-nopaddingleft {
+    padding-left: 0;
+}
+
+
+/*产品详情页，外边距设置*/
+
+.productdetail-marginbottom {
+    margin-bottom: 3px;
+}
+
+.productdetail-marginbottom item {
+    padding-left: 0;
+    border-left: 0;
+}
+
+
+/*产品详情页，tag小图片样式*/
+
+.productdetail-tagimg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+
+/*产品详情页，tag文字样式*/
+
+.productdetail-tagtext {
+    height: 25px;
+    line-height: 25px;
+    padding-left: 5px;
+}
+
+
+/*产品详情页，tag标签div颜色块--紫色*/
+
+.productdetail-tagdiv-purple {
+    /*background-color: #1983d1;*/
+    width: 8px;
+    height: 20px;
+    padding-left: 8px;
+}
+
+
+/*产品详情页，tag标签div颜色块--绿色*/
+
+.productdetail-tagdiv-green {
+    background-color: #11EE69;
+    width: 10px;
+    height: 20px;
+}
+
+.productdetail-tagdiv-green b {
+    padding-left: 20px;
+}
+
+
+/*产品详情页，tag标签div颜色块--红色*/
+
+.productdetail-tagdiv-red {
+    background-color: #F84519;
+    width: 10px;
+    height: 20px;
+}
+
+.productdetail-tagdiv-red b {
+    padding-left: 20px;
+}
+
+
+/*产品详情页，tag标签div颜色块--蓝色*/
+
+.productdetail-tagdiv-cyan {
+    background-color: #72E3CC;
+    width: 10px;
+    height: 20px;
+}
+
+.productdetail-tagdiv-cyan b {
+    padding-left: 20px;
+}
+
+
+/*产品详情页，tag标签div颜色块--蓝色*/
+
+.productdetail-tagdiv-blue {
+    background-color: #3333CC;
+    width: 10px;
+    height: 20px;
+}
+
+.productdetail-tagdiv-blue b {
+    padding-left: 20px;
+}
+
+
+/*产品详情页，"借款流程" 样式*/
+
+.productdetail-process-content,
+.productdetail-process-point {
+    max-width: 13%;
+}
+
+.productdetail-process-content img {
+    max-height: 80%;
+    max-width: 98%;
+}
+
+.productdetail-process-point img {
+    max-height: 80%;
+    max-width: 80%;
+}
+
+
+/*产品详情页面 底部 “立即申请” 按钮样式*/
+
+div.product-detail-footer {
+    height: 50px;
+}
+
+div.product-detail-footer button:first-child {
+    font-size: 18px !important;
+    width: 30%;
+    min-width: 80px;
+    background-color: #fe595f !important;
+}
+
+div.product-detail-footer button:last-child {
+    font-size: 18px !important;
+    width: 65%;
+    background: #1983d1!important;
+}

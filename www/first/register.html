@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <title>注册</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" href="ionic.css"></link>
+        <link rel="stylesheet" href="modify.css"></link>
+        <!--<script src="../js/ionic.bundle.min.js"></script>-->
+    </head>
+    <body>
+        <ioc-header-bar class="bar bar-header bar-positive">
+            <div class="buttons">
+                <button class="button icon-left ion-ios-undo-outline" ng-click=""></button>
+            </div>
+            <h1 class="title">注册</h1>
+            
+        </ioc-header-bar>
+        
+        <ioc-content class="scroll-content has-subheader" padding="true">
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">手机号码</span>
+                    <input type="text">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">登录密码</span>
+                    <input type="password">
+                    <button class="button button-clear button-content-login-reload">
+                        <img src="img/yinchang.png" class="img-content-login-reload" />
+                    </button>
+                </label>
+                
+                <label class="item item-input">
+                    <span class="input-label">验证码</span>
+                    <input type="text">
+                    <button class="button button-light button-verificacode-register-reload" >获取验证码</button>
+                </label>
+                
+            </div>
+            
+            <div class="padding">
+                <button class="button button-positive button-block">注册</button>
+            </div>
+            <!-- <ion-checkbox ng-model="checked"><p>我已阅读并同意<span class="calm"><<用户协议>></span></p></ion-checkbox> -->
+
+            <div>
+                <label class="checkbox checkbox-calm" style="float:left;padding:0;margin-top:-3px;">
+                    <input class="register-check" type="checkbox" checked="">
+                </label>
+                <p>我已阅读并同意<span class="calm"><<用户协议>></span></p>
+            </div>
+        </ioc-content>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+    <head>
+        <title>产品详情</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+        <link rel="stylesheet" href="ionic.css"></link>
+		<link rel="stylesheet" href="modify.css"></link>
+    </head>
+    <body>
+        <ion-header-bar class="bar bar-header bar-positive">
+			<button class="button icon-left ion-ios-undo-outline"></button>
+            <h1 class="title">拍拍贷</h1>
+        </ion-header-bar>
+
+        <ion-content class="scroll-content has-header has-footer overflow-scroll">
+            
+           <div ng-repeat="item in items " item="item">
+				<div class="list list-borderless list-inset button-block">
+					<div class="item">
+						<div class="multicolbox">
+							<div class="colitemwrap">
+								<div>
+									<img src="../img/ppd.jpg" style="max-width:80px;max-height:80px;" />
+								</div>
+							</div>
+							<div class="colitemstrech">
+								<div>
+									<h2>拍拍贷-个人贷</h2>
+									<p>参考月费率:<span class="calm">1.00%</span></p>
+									<p>成功率：良好</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="item-divider">全线上操作，大品牌成功率高</p>
+				</div>
+           </div>
+            <hr>
+			
+			<div class="inline padding-top item-input-reload">
+				<div class="item-input-wrapper light-bg"">
+					<label class="item item-input item-select-reload">
+						<input type="text" value="3000">
+							<p>元</p>
+					</label>
+				</div>
+				<p  class="text-center">额度范围：1000-50000元</p>
+			</div>
+			
+			<div class="inline padding-top item-input-reload">
+				<div class="item-input-wrapper light-bg"">
+					<label class="item item-input item-select-reload">
+						<input type="text" value="3">
+							<p>月</p>
+					</label>
+				</div>
+				<p  class="text-center">期限范围：3-12月</p>
+			</div>
+			
+			<div class="inline item-input calm item-input-div-reload">	
+				<p class="text-center" style="width:100%;">等额本息</p>
+				<div class="inline text-center inline-div-border-reload">
+					<p>1007</p>
+					<p>总还款额(元)</p>
+				</div>
+				<div class="inline text-center inline-div-border-reload">
+					<p>7</p>
+					<p>总利息(元)</p>
+				</div>
+				<div class="inline text-center inline-div-noborder-reload">
+					<p>1007</p>
+					<p>每期应还(元)</p>
+				</div>
+				<p> </p>
+			</div>
+			
+			<div ng-repeat="item in items" item="item">
+				<ul class="list list-borderless list-inset">
+				
+					<li class="item-divider  icon ion-compose">  申请条件</li>
+					<li class="item">
+						<p>有信用卡</p>
+						<p>22-55岁</p>
+						<p>有淘宝账户，有芝麻信用</p>
+						<p>手机实名制（6个月以上）</p>
+					</li>
+					
+					<li class="item-divider  icon ion-clipboard">  所需材料</li>
+					<li class="item">
+						<p>身份证</p>
+						<p>居住证明</p>
+						<p>银行对账单</p>
+						<p>公用事业缴费单</p>
+						<p>房产证</p>
+						<p>户口本</p>
+						<p>收入证明文件</p>
+						<p>央行征信</p>
+						<p>行驶证</p>
+					</li>
+					
+					<li class="item-divider icon ion-clock">  提前还款</li>
+					<li class="item">
+						<p>可以提前还款，按日收取利息及费用</p>
+					</li>
+					
+					<li class="item-divider icon ion-happy-outline">  用户评论</li>
+					<li class="item">
+						<p>暂无</p>
+					</li>
+				</ul>
+			</div>
+        </ion-content>
+
+        <div class="bar bar-footer padding">
+            <button class="button button-positive button-block">立即申请</button>
+        </div>
+    </body>
+</html>

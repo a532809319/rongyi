@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+	<head>
+		<title>容易借</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+		<link rel="stylesheet" href="ionic.css"></link>
+		<link rel="stylesheet" href="index.css"></link>
+	</head>
+	<body>
+		<ion-header-bar class="bar bar-header bar-positive header-middle-reload">
+			<div class="title padding">
+				<img src="../img/logo.png" />
+			</div>
+			<div class="buttons">
+				<button class="button icon icon-right ion-android-mail header-button-middle-reload"></button>
+			</div>
+			
+			<div class="item-input-wrapper positive-bg item-input-reload">
+				
+				<label class="item item-input item-select-reload positive-bg">
+					<input type="text" class="button-clear positive-bg item-input-reload-input" value="10000">
+						<p class="text-center">元</p>
+				</label>
+
+				
+				<label class="item item-input item-select positive-bg item-select-reload">
+					<input type="text" class="button-clear  item-input-reload-input" value="12">
+					<select>
+						<option>日</option>
+						<option selected>月</option>
+					</select>
+				</label>
+				<button class="button button-assertive button-reload">搜索</button>
+			</div>
+		</ion-header-bar>
+		
+		<div class="bar bar-subheader subheader-top">
+			<h1 class="title">用户131*****850通过拍拍贷借款100元</h1>
+		</div>
+	
+		<ion-content class="scroll-content has-subheader has-footer overflow-scroll padding content-top-reload">
+			
+			<h3 class="text-center">---------精彩推荐---------</h3>
+			<div class="inline text-center" style="width:48%;height:calc(width*0.5);margin-left:1%;">				
+				<div class="item-input">
+					<img class="img-reload" src="../img/jsxj.png" />
+				</div>		
+				<p >借的到的现金最高5000元，全线上申请</p>
+			</div>
+			
+			<div class="inline text-center" style="width:48%;height:calc(width*0.5);margin-right:1%;">
+				<div class="item-input">
+					<img class="img-reload" src="../img/fqdk.png" />
+				</div>	
+				<p >借的到的现金最高5000元，全线上申请</p>
+			</div>
+			
+					
+			
+			<h4 class="item-divider"><span class="calm">为你快速推荐</span></h4>
+			<div ng-repeat="item in items " item="item">
+				<div class="list list-borderless list-inset button-block">
+					<div class="item item-icon-right" ng-click="">
+						<div class="multicolbox">
+							<div class="colitemwrap">
+								<div>
+									<img src="../img/ppd.jpg" style="max-width:80px;max-height:80px;" />
+								</div>
+							</div>
+							<div class="colitemstrech">
+								<div>
+									<h2>拍拍贷-个人贷</h2>
+									<p>参考月费率:<span class="calm">1.00%</span></p>
+									<p>成功率：良好</p>
+								</div>
+							</div>
+						</div>
+						<i class="icon ion-ios-arrow-right"></i>
+					</div>
+					<p class="item-divider">全线上操作，大品牌成功率高</p>
+				</div>
+				</div>
+
+				<div ng-repeat="item in items " item="item">
+				<div class="list list-borderless list-inset button-block">
+					<div class="item item-icon-right" ng-click="">
+						<div class="multicolbox">
+							<div class="colitemwrap">
+								<div>
+									<img src="../img/ppd.jpg" style="max-width:80px;max-height:80px;" />
+								</div>
+							</div>
+							<div class="colitemstrech">
+								<div>
+									<h2>拍拍贷-个人贷</h2>
+									<p>参考月费率:<span class="calm">1.00%</span></p>
+									<p>成功率：良好</p>
+								</div>
+							</div>
+						</div>
+						<i class="icon ion-ios-arrow-right"></i>
+					</div>
+					<p class="item-divider">全线上操作，大品牌成功率高</p>
+				</div>
+				</div>
+
+				<div ng-repeat="item in items " item="item">
+				<div class="list list-borderless list-inset button-block">
+					<div class="item item-icon-right" ng-click="">
+						<div class="multicolbox">
+							<div class="colitemwrap">
+								<div>
+									<img src="../img/ppd.jpg" style="max-width:80px;max-height:80px;" />
+								</div>
+							</div>
+							<div class="colitemstrech">
+								<div>
+									<h2>拍拍贷-个人贷</h2>
+									<p>参考月费率:<span class="calm">1.00%</span></p>
+									<p>成功率：良好</p>
+								</div>
+							</div>
+						</div>
+						<i class="icon ion-ios-arrow-right"></i>
+					</div>
+					<p class="item-divider">全线上操作，大品牌成功率高</p>
+				</div>
+				</div>
+			
+		</ion-content>
+		
+		<div class="bar bar-footer bar-light">
+			<div class="tabs tabs-icon-top"> 
+				<a class="tab-item calm-bg" href="#"><i class="icon ion-ios-home"></i>首页</a>
+				<a class="tab-item" href="#"><i class="icon ion-social-yen-outline"></i>借钱</a>
+				<a class="tab-item" href="#"><i class="icon ion-android-person"></i>个人</a>
+			</div>
+		</div>
+	</body>
+</html>

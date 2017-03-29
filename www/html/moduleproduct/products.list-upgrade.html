@@ -1,0 +1,49 @@
+<ion-view hide-nav-bar="true" id="productListPage">
+    <!--<ion-nav-title>-->
+    <!--小微极速贷-->
+    <!--</ion-nav-title>-->
+    <!--<ion-nav-title class="show">-->
+    <!--我是{{vm.getPageTitle()}}-->
+    <!--</ion-nav-title>-->
+    <ion-content class="scroll-content overflow-scroll padding">
+
+        <ion-list>
+            <ion-item class=" row-no-padding item-borderless"
+                      collection-repeat="item in vm.items "
+                      ng-click="vm.forwardProductDetail(item)"
+            >
+                <div class="product-item-wrapper">
+                    <div class="multicolbox  multicolbox-padding">
+                        <div class="colitemwrap">
+                            <div>
+                                <img src="{{item.logoUrl}}" style="width:80px;height:80px;" border="0"/>
+                            </div>
+                        </div>
+                        <div class="colitemstrech  colitemstrech-paddingleft">
+
+                            <div>
+                                <h2>{{item.prodName}}</h2>
+
+                                <p ng-if="(item.prodCatg === '1')">参考月费率:<span class="calm">{{item.monthRate|NumberDotFilter:2}}</span>
+                                </p>
+                                <p ng-if="!(item.prodCatg === '1')">参考日费率:<span class="calm">{{item.dayRate|NumberDotFilter:2}}</span>
+                                </p>
+
+                                <p>成功率：
+                                    <star-component rate="{{item.successRate}}"></star-component>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="colitemwrap">
+                            <i class="icon ion-ios-arrow-right product-item-iconright"></i>
+                        </div>
+                    </div>
+                    <p class="item-divider product-item-introduce">{{item.prodDesc}}</p>
+                </div>
+            </ion-item>
+
+        </ion-list>
+
+    </ion-content>
+</ion-view>

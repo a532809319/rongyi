@@ -1,0 +1,38 @@
+<ion-view hide-nav-bar="true">
+    <!--<ion-nav-title>-->
+    <!--分期借款-->
+    <!--</ion-nav-title>-->
+    <div class="scroll-content-y padding">
+        <ion-list>
+            <ion-item class=" row-no-padding item-borderless"
+                      collection-repeat="item in vm.items "
+                      ng-click="vm.forwardProductDetail(item)"
+            >
+                <div class="multicolbox">
+                    <div class="colitemwrap">
+                        <div>
+                            <img src="{{item.logoUrl}}" style="max-width:80px;max-height:80px;"/>
+                        </div>
+                    </div>
+                    <div class="colitemstrech products-list-text-left">
+                        <div>
+                            <div>
+                                <h2>{{item.prodName}}</h2>
+                                <p>参考月费率:<span class="calm">{{item.monthRate|NumberDotFilter:2}}</span></p>
+                                <p>成功率：
+                                    <star-component rate="{{item.successRate}}"></star-component>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <i class="icon ion-ios-arrow-right"></i>
+
+                <p class="item-divider products-list-introduce">{{item.prodDesc}}</p>
+
+            </ion-item>
+
+        </ion-list>
+
+    </div>
+</ion-view>

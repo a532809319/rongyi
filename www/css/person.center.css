@@ -1,0 +1,49 @@
+
+div.personcenter-headimg{
+    width: 100%;
+    top: 45px;
+    position: absolute;
+}
+div.personcenter-headimg img{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+div.personcenter-headimg p{
+    margin-bottom: 20px;
+}
+
+.personcenter-button{
+    top: -3px;
+    right: 0px;
+    position: absolute;
+    width:40px;
+}
+
+/*个人中心页面列表样式*/
+.personcenter-info-ul{
+    margin-top: 10px;
+}
+.personcenter-info-ul li{
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.personcenter-info-ul img{
+    width: 32px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.personcenter-info-ul li span{
+    color:#666666;
+    letter-spacing: 1px;
+}
+
+img.list-jiantou-right{
+    position: absolute;right:0px;
+}
+
+.personcenter-account{
+    color:white;
+    text-decoration:none ;
+}

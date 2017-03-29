@@ -1,0 +1,17 @@
+
+<ion-modal-view hide-nav-bar="true" cache-view="false">
+    <ion-title>
+        第三方平台
+        <button ng-click="vm.closeModal()">CloseIt</button>
+    </ion-title>
+    <ion-content  scroll="true" class="has-header no-padding no-margin"  style="padding: 0px;margin: 0px;">
+        <div class='myMask' style=" position: absolute;height:480px;-webkit-overflow-scrolling:touch;overflow:auto; background: white;">
+        <iframe ng-if="vm.thirdPlatformUrl"
+                style="min-width:100%;min-height: 100%;background: #FFF; "
+                ng-src="{{vm.thirdPlatformUrl}}"
+                data-tap-disabled="true"
+                scrolling="yes"
+        />
+        </div>
+    </ion-content>
+</ion-modal-view>

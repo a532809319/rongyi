@@ -1,0 +1,214 @@
+<ion-view hide-nav-bar="true" cache-view="false" id="productDetailPage">
+    <!--<ion-nav-title>
+    {{vm.body.basicInfo.prodName}}
+    </ion-nav-title>-->
+	<!--<div class="bar bar-header bar-light">-->
+           <!--<h1 class="title header-bar-color">产 品 详 情 </h1>-->
+	<!--</div>-->
+    <div class="scroll-content-y  has-footer"  style="background:#E7E7E7;top:0px;position:absolute;">
+
+
+
+		<div class="item item-borderless productdetail-marginbottom">
+			<div class="multicolbox">
+				<div class="colitemwrap padding-right">
+					<div>
+						<img src="{{vm.body.basicInfo.logoUrl}}" style="max-width:60px;max-height:60px;" />
+					</div>
+				</div>
+				<div class="colitemstrech">
+					<div>
+						<h2>{{vm.body.basicInfo.prodName}}</h2>
+						<p><small><span>{{vm.body.opsInfo.usePeopleSize}}人</span>已申请</small></p>
+                        <p><small>平均放款额度{{vm.body.basicInfo.avgLoanAmount}}元</small></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<hr class="light-bg" style="margin:0;">-->
+
+		<!--金额和期限栏-->
+		<div class="light-bg multicolbox productsdetail-multicolboxs">
+			<div class="colitemstretch" style="width:40%;">
+				<div>
+					<div class="item-input productdetail-nopaddingleft">
+						<span>金 额</span>
+						<label class="item-input-wrapper productsdetail-input">
+                            <input  type="text" class="text-center"
+                            value="{{vm.body.basicInfo.minLoanLimit}}"
+                                ng-model="vm.productInterest.inputAmount"
+                                ng-change="vm.productInterest.doCalculate()"
+                            >
+                            <p>元</p>
+                        </label>
+					</div>
+					<p class="text-left " style="font-size:85%;">
+						<small>额度范围：{{vm.body.basicInfo.minLoanLimit}}-{{vm.body.basicInfo.maxLoanLimit}}元</small>
+					</p>
+				</div>
+			</div>
+
+			<div class="colitemstretch" style="width:40%; margin-left:10%;">
+				<div>
+					<div class="item-input productdetail-nopaddingleft">
+						<span>期 限</span>
+						<label class="item-input-wrapper productsdetail-input light-bg">
+                            <input type="text" class="text-center"
+                            value="{{vm.body.basicInfo.minLoanPeriod}}"
+                            ng-model="vm.productInterest.inputPeriod"
+                             ng-change="vm.productInterest.doCalculate()">
+                            <p>{{vm.body.basicInfo.periodUnit}}</p>
+                        </label>
+					</div>
+					<p class="text-left " style="font-size:85%;">
+						<small>期限范围：{{vm.body.basicInfo.minLoanPeriod}}-{{vm.body.basicInfo.maxLoanPeriod}}{{vm.body.basicInfo.periodUnit}}</small>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="light-bg padding-bottom productdetail-marginbottom">
+			<div class="productsdetail-repay-div">
+				<img src="./../img/detail/border.png">
+				<p class="text-center padding-top">还款计划</p>
+				<div class="inline text-center productsdetail-repay-div-child-border">
+					<p style="color:#11c1f3" ng-if="(vm.body.basicInfo.prodCatg==='1')">{{vm.body.basicInfo.monthRate|NumberDotFilter:2}}</p>
+					<p ng-if="(vm.body.basicInfo.prodCatg==='1')"><small>参考月费率</small></p>
+					<p style="color:#11c1f3" ng-if="!(vm.body.basicInfo.prodCatg==='1')">{{vm.body.basicInfo.dayRate|NumberDotFilter:2}}</p>
+					<p ng-if="!(vm.body.basicInfo.prodCatg==='1')"><small>参考日费率</small></p>
+				</div>
+				<div class="inline text-center productsdetail-repay-div-child-border">
+					<p style="color:#11c1f3">{{vm.productInterest.termPayment}}</p>
+					<p><small>每期还款(元)</small></p>
+				</div>
+				<div class="inline text-center productsdetail-repay-div-child-noborder">
+					<p style="color:#11c1f3">{{vm.body.basicInfo.putMoneyTime}}{{vm.body.basicInfo.putMoneyTimeUnit}}</p>
+					<p><small>最快放款时间</small></p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!--借款流程栏-->
+		<div class="light-bg productdetail-marginbottom">
+			<ion-list>
+				<ion-item class="item-divider light-bg padding item-icon-left">
+					<div class="productdetail-tagdiv-purple">
+						<span>   贷款流程 </span>
+					</div>
+				</ion-item>
+				<div class="multicolbox padding">
+					<div class="colitemstrech text-center productdetail-process-content">
+						<img src="./../img/detail/zhuce.png">
+					</div>
+					<div class="colitemstrech text-center productdetail-process-point">
+						<img src="./../img/detail/jiaotou.png">
+					</div>
+					<div class="colitemstrech text-center productdetail-process-content">
+						<img src="./../img/detail/ziliao.png">
+					</div>
+					<div class="colitemstrech text-center productdetail-process-point">
+						<img src="./../img/detail/jiaotou.png">
+					</div>
+					<div class="colitemstrech text-center productdetail-process-content">
+						<img src="./../img/detail/shenqin-.png">
+					</div>
+					<div class="colitemstrech text-center productdetail-process-point">
+						<img src="./../img/detail/jiaotou.png">
+					</div>
+					<div class="colitemstrech text-center productdetail-process-content">
+						<img src="./../img/detail/shenghe.png">
+					</div>
+				</div>
+                <div class="multicolbox ">
+                    <p class="colitemstrech text-center font-size-14">
+                         注册登录
+                    </p>
+                    <p class="colitemstrech text-center font-size-14">
+                        填写资料
+                    </p>
+                    <p class="colitemstrech text-center font-size-14">
+                       申请借款
+                    </p>
+                    <p class="colitemstrech text-center font-size-14">
+                        等待审核
+                    </p>
+                </div>
+			</ion-list>
+		</div>
+
+		<!--申请条件栏-->
+		<div class="light-bg productdetail-marginbottom">
+			<ion-list>
+				<ion-item class="item-divider light-bg padding item-icon-left" >
+					<div class="productdetail-tagdiv-purple">
+						<span>   申请条件 </span>
+					</div>
+				</ion-item>
+
+				<product-tag ng-repeat="producttags in vm.body.prodApplyReqInfo.prodPrqXrefDetails"
+				tag-value="{{producttags.applyReqName}}" tag-desc="{{producttags.applyReqDesc}}" tag-type="true"></product-tag>
+
+			</ion-list>
+		</div>
+
+		<!--申请材料栏-->
+		<div class="light-bg productdetail-marginbottom">
+			<ion-list>
+				<ion-item class="item-divider light-bg padding item-icon-left" >
+					<div class="productdetail-tagdiv-purple">
+						<span>   申请材料 </span>
+					</div>
+				</ion-item>
+
+				<product-tag ng-repeat="producttag in vm.body.prodApplyMaterialInfo.prodPrmXrefDetails"
+				tag-value="{{producttag.applyMaterialName}}" tag-desc="{{producttag.applyMaterialDesc}}" tag-type="false"></product-tag>
+
+			</ion-list>
+		</div>
+
+		<!--提前还款栏-->
+		<div class="light-bg productdetail-marginbottom">
+			<ion-list>
+				<ion-item class="item-divider light-bg padding item-icon-left">
+					<div class="productdetail-tagdiv-purple">
+						<span>   提前还款 </span>
+					</div>
+				</ion-item>
+				<p class="padding-left padding-top">
+					<img src="./../img/detail/tqhk.png" class="productdetail-tagimg">
+					<span class="productdetail-tagtext font-size-14">{{vm.body.basicInfo.advanceRepayDesc}}</span>
+				</p>
+
+			</ion-list>
+		</div>
+
+		<!--新手指导-->
+		<div class="light-bg productdetail-marginbottom">
+			<ion-list>
+				<ion-item class="item-divider light-bg padding item-icon-left">
+					<div class="productdetail-tagdiv-purple">
+						<span>   新手指导 </span>
+					</div>
+				</ion-item>
+                <pre class="font-size-14 padding-left">{{vm.body.basicInfo.guide}}</pre>
+            </ion-list>
+        </div>
+
+        <div class="scroll-bottom-space"></div>
+	</div>
+
+	<div class="bar bar-footer product-detail-footer">
+		<!--<div class="col-50">
+			<button class="button button-positive button-block" ng-click="vm.doApplyProduct('1')"> 攻 略 链 接 </button>
+		</div>
+		<div class="col-50">
+			<button class="button button-positive button-block" ng-click="vm.doApplyProduct('2')"> 立 即 申 请 </button>
+		</div>-->
+		<button class="button button-positive " ng-click="vm.forwardLoanStrategy()"> 攻略 </button>
+		<button class="button button-positive " ng-click="vm.doApplyProduct()"> 立即申请 </button>
+	</div>
+</ion-view>

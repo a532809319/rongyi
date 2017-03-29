@@ -1,0 +1,73 @@
+/*
+author:anhao.zheng
+date:20160831
+*/
+
+@charset "utf-8";
+.multicolbox,
+.colitemwrap,
+.colitemstrech {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.multicolbox {
+    display: box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.multicolbox .colitemstrech {
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-flex: 1;
+}
+
+.multicolbox .colitemwrap {}
+
+
+/*
+ 附上标准文件
+ <div class="multicolbox">
+<div class="colitemwrap">
+	<div>
+       <img src="http://g.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=a4d8ef3bbd096b63811959563408e079/c2fdfc039245d6887aa19ab0a7c27d1ed21b2406.jpg"
+        style="height:72px;width:72px;"/>
+		
+	</div>
+</div>
+<div class="colitemwrap">
+	<div> 
+		<p>first</p>
+		<p>second</p>
+		<p>third</p>
+	</div>
+</div>
+<div class="colitemstrech" >
+	<div>
+		<p>first</p>
+		<p>second</p>
+		<p>third</p>
+		<p>我很丑可是我很温柔</p>
+	</div>
+</div>
+<div class="colitemwrap" >
+	<div>
+		<span>&gt;</span> 
+	</div>
+</div>
+</div> 
+
+*/

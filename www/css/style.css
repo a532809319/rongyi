@@ -1,0 +1,99 @@
+/* Empty. Add your own CSS if you like */
+
+@charset "utf-8";
+
+.font-size-18{
+    font-size: 18px !important;
+}
+
+.font-size-16{
+    font-size: 16px !important;
+}
+
+.font-size-14{
+    font-size: 14px !important;
+}
+
+
+.font-size-12{
+    font-size: 12px !important;
+}
+
+.font-size-10{
+    font-size: 10px !important;
+}
+
+.color-333333{
+    color: #333333 !important;
+}
+
+.color-666666{
+    color: #666666 !important;
+}
+
+.background-color-eeeff3{
+    background-color: #eeeff3 !important;
+}
+
+.scroll-content-y{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    height:100%;
+    display: block;
+    position: relative;
+}
+/*用于占据屏幕下方一定的大小*/
+.scroll-bottom-space{
+    height:100px;
+    width:100%;
+}
+/*
+ <div class="scroll-bottom-space"></div>
+*/
+
+
+.loadingbox {
+    width: 100%;
+    height: 100%;
+}
+
+.loadingbox-text {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+/*头部颜色*/
+.header-bar-color{
+    background-color: #1983d1!important;
+    color: #ffffff !important;
+    margin: 0px !important;
+}
+
+/*等待页面加载完成时的图片*/
+.loading-image{
+    width:80px;
+    height:80px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-40px;
+    margin-left:-40px;
+}
+
+.item.active,
+.item.activated,
+.item-complex.active   .item-content,
+.item-complex.activated  .item-content,
+.item .item-content.active,
+.item .item-content.activated{
+    border-color: #ffffff!important;
+    background-color: #FFF!important;
+}
